@@ -496,7 +496,7 @@ public class AGEMultiMachines {
                     .aisle("FF FF", "FXXXF", "XXXXX", "XX@XX", "XXXXX", " XXX ")
                     .where("@", controller(blocks(definition.get())))
                     .where("K", abilities(AstroPartAbility.KINETIC_INPUT).setExactLimit(1)
-                          .or(MACHINE_CASING_KINETIC.get()))
+                          .or(blocks(MACHINE_CASING_KINETIC.get())))
                     .where("X", blocks(MACHINE_CASING_KINETIC.get()).setMinGlobalLimited(50)
                             .or(abilities(IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
                             .or(abilities(IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
